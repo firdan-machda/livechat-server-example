@@ -173,6 +173,7 @@ GRAPHENE = {
 }
 
 ASGI_APPLICATION = 'channel.routing.application'
+
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels.layers.InMemoryChannelLayer',

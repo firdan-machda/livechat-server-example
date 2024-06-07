@@ -1,5 +1,5 @@
 # Django Channel Example
-Simple chat app to demonstrate WebSocket. Based on [django-websocket-example](https://github.com/firdan-machda/django-websocket-channels-example). Change to new repo due to this will have significant changes.
+Simple chat app to demonstrate WebSocket. Based on fork [django-websocket-example](https://github.com/detailperpix/django-websocket-channels-example). Change to new repo due to this will have significant changes.
 
 ## Setup
 - Install requirements\
