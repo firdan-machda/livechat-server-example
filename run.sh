@@ -9,6 +9,6 @@ cd $DIR
 # activate the environment, assume venv is the same directory as the script
 source $DIR/venv/bin/activate
 
-
+echo "Running Django server..."
 # run the Django server
 python manage.py runserver

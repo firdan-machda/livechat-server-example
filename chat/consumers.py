@@ -3,12 +3,18 @@ import json
 import random
 from faker import Faker
 from faker.providers import lorem
+from channels.db import database_sync_to_async
 from channels.generic.websocket import AsyncWebsocketConsumer
+from channels.auth import login
+from rich.console import Console
 
+console = Console()
 
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
+
         print(self.scope["user"])
+        print(self.scope)
         self.room_name = self.scope["url_route"]["kwargs"]["room_name"]
         self.room_group_name = "chat_%s" % self.room_name
 
