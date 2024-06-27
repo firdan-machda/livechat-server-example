@@ -155,7 +155,7 @@ class LiveChatConsumer(AsyncWebsocketConsumer):
             # type chat.message will be handled by chat_message method
             await self.channel_layer.group_send(
                 self.room_group_name, {
-                    "type": "chat.message", "message": text_data_json['message'], "owner": text_data_json['owner']}
+                    "type": "chat.message", "message": text_data_json['message'], "owner": text_data_json['owner'], "user": self.scope['user'].id}
             )
 
     # Receive message from room group
